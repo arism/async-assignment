@@ -103,7 +103,6 @@ public class AsyncTest {
    * of the result. Use the `executor` to make `map` stack safe.
    */
   @Test public void mapIsStackSafe() {
-    final int count = 10000;
 
     Async<Integer> ref = Async.eval(() -> 0);
     for (int i = 0; i < count; i++) {
